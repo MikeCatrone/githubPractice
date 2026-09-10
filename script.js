@@ -1,0 +1,1 @@
+let message = "Greetings, this is my message"
