@@ -38,6 +38,9 @@ void showLoadMenu();
 void mikeGreeting();
 void mikeGreeting2();
 
+//Jacob's Function
+void jacobShowMovieName();
+void jacobShowMovieRelease();
 
 
 int main () {
@@ -539,4 +542,24 @@ void mikeGreeting() {
 
 void mikeGreeting2() {
     printf("%s", "This is a second greeting from Mike!");
+}
+
+
+//Jacob's functions
+
+void jacobShowMovieName(struct movie *current) {
+    if (current != NULL) {
+        printf("Movie Name: %s\n", current->name);
+    } else {
+        printf("There is no movie.\n");
+    }
+
+}
+
+void jacobShowMovieRelease(struct movie *current) {
+    if (current != NULL) {
+        printf("Movie Release Year: %d\n", current->year);
+    } else {
+        printf("There is no movie.\n");
+    }
 }
