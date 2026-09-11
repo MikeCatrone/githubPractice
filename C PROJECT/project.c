@@ -32,6 +32,14 @@ struct movie *exitProgram(struct movie *start);
 void showMainMenu();
 void showLoadMenu();
 
+
+
+// Mike's Function
+void mikeGreeting();
+void mikeGreeting2();
+
+
+
 int main () {
     struct movie *start = NULL;
     int choice = 0;
@@ -518,4 +526,17 @@ struct movie *exitProgram(struct movie *start) {
 
     fputs("\nCleanup complete. Exiting...", stdout);
     return start;
+}
+
+
+
+// Mike's functions
+
+void mikeGreeting() {
+    printf("%s", "Greetings from Mike");
+}
+
+
+void mikeGreeting2() {
+    printf("%s", "This is a second greeting from Mike!");
 }
